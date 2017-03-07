@@ -125,7 +125,7 @@ static NSString *testDirectory;
     NSString *txt =  [directoryName stringByAppendingPathComponent:fileName];
     
     //创建文件fileName文件名称，contents文件的内容，如果开始没有内容可以设置为nil，attributes文件的属性，初始为nil
-    [fileManager createFileAtPath:txt contents:[[NSString stringWithFormat:@"%@",contentArr] dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
+    [fileManager createFileAtPath:txt contents:[[NSString stringWithFormat:@"%@",content] dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
     
 }
 
